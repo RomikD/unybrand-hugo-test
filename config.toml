@@ -1,17 +1,97 @@
 baseURL = "/"
 languageCode = "en-us"
 theme = "papaya"
-title = "unybrand"
-[menu]
-main = [
+title = "Customer Lab"
+[[menu.main]]
+identifier = "your_industry"
+name = "Your Industry"
+parent = "industries"
+url = "/your-industry"
+weight = 14
+[[menu.main]]
+identifier = "platforms"
+name = "Platforms"
+parent = "partner"
+url = "/platforms/"
+weight = 11
+[[menu.main]]
+hasChildren = true
+identifier = "service"
+name = "Services"
+url = "#"
+weight = 1
+[[menu.main]]
+identifier = "live-leads"
+name = "Live leads"
+parent = "service"
+url = "/live-leads/"
+weight = 5
+[[menu.main]]
+identifier = "live-calls"
+name = "Live calls"
+parent = "service"
+url = "/live-calls/"
+weight = 2
+[[menu.main]]
+identifier = "managedservices"
+name = "Managed services"
+parent = "service"
+url = "/managedservices/"
+weight = 9
+[[menu.main]]
+identifier = "saas"
+name = "Saas"
+parent = "service"
+url = "/saas/"
+weight = 12
+[[menu.main]]
+hasChildren = true
+identifier = "industries"
+name = "Industries"
+url = "#"
+weight = 6
+[[menu.main]]
+identifier = "consumerfinance"
+name = "Consumer finance"
+parent = "industries"
+url = "/consumerfinance/"
+weight = 3
 [[menu.main]]
 identifier = "insurance"
 name = "Insurance"
 parent = "industries"
 url = "/insurance"
-weight = 7]
+weight = 7
+[[menu.main]]
+hasChildren = true
+identifier = "partner"
+name = "Partners"
+url = "#"
+weight = 10
+[[menu.main]]
+hasChildren = false
+name = "Contact us"
+url = "/contact-us/"
+weight = 13
+[[menu.main]]
+identifier = "Publishers"
+name = "Publishers"
+parent = "partner"
+url = "/publisher/"
+weight = 4
+[[menu.main]]
+name = "Brands"
+parent = "partner"
+url = "/brands/"
+weight = 8
+[[menu.main]]
+identifier = "local"
+name = "Local services"
+parent = "industries"
+url = "/local/"
+weight = 15
 [params]
-authorName = "dudnyk.rb"
+authorName = "dudnyk.rb@gmail.com"
 dateFormat = "Jan 2, 2006"
 googleAdSense = "ca-pub-0000000000000000"
 googleAnalytics = "UA-000000000-1"
