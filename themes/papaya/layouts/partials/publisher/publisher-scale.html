@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "publisher" "publisher-scale" }}
+<section id="ready_to_scale_p" style="background-image: url(../images/lc-bg.png);">
+    <h2>{{ .Title }}</h2>
+        <div>
+        <a class="r-b" data-toggle="modal" data-target="#book-demo">Book a Demo Today</a>
+    </div>
+</section>
+{{ end }}
+{{ partial "pop-up/bookdemo.html" . }}

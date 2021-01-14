@@ -1,0 +1,99 @@
+{{ with .Site.GetPage "managedservices" "managed-top" }}
+    <section id="managed-top" style="background-image: url(../images/h1-bg.png);">
+        <div class="first">
+        <div class="img-block">
+            <img src="/images/managed-services.png" alt="">
+        </div>
+        <div class="text-block">
+            <h2>
+                {{ .Title }}
+            </h2>
+            <p>{{ .Content }}</p>
+            <div>
+                <a class="violet-button" data-toggle="modal" data-target="#get-started">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+        {{ partial "pop-up/get-started.html" . }}{{ end }}
+        {{ with .Site.GetPage "managedservices" "managed-top2" }}
+    <div class="second">
+        <div class="text-block">
+            <h2 >{{ .Title }}</h2>
+            <p class="blue">This is how we do it:</p>
+            <div class="icons">
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item1_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item1_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item2_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item2_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item3_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item3_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item4_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item4_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item5_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item5_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="icon">
+                        {{ with .Page.Params.item6_img }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <div class="text">
+                        <p>{{ with .Page.Params.item6_title }}{{ . }} {{ end }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-block">
+            {{ with .Page.Params.img }}
+            <img src="{{ . }}">
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ with .Site.GetPage "managedservices" "managed-top" }}
+<h1 class="title-page" style="padding: 0 0 20px 0;">{{ with .Page.Params.title_page }}{{ . }}{{ end }}</h1>
+{{ end }}

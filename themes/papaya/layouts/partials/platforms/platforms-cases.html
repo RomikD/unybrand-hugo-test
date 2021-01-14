@@ -1,0 +1,43 @@
+{{ with .Site.GetPage "platforms" "platforms-cases" }}
+<section id="publisher-cases">
+    <div class="title">
+        <h3>{{ .Title }}</h3>
+    </div>
+    <div class="use-cases">
+        <div class="one-case">
+            <div class="img">
+                {{ with .Page.Params.first_case_img }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            <div class="info">
+                <h3>{{ with .Page.Params.first_case_name }}{{ . }}{{ end }}</h3>
+                <p> {{ with .Page.Params.first_case_description }}{{ . }}{{ end }}</p>
+                <p class="subtitle">{{ with .Page.Params.first_case_items_title }}{{ . }}{{ end }}</p>
+                <div class="items">
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.first_case_item }}{{ . }}{{ end }}</p>
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.first_case_item2 }}{{ . }}{{ end }}</p>
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.first_case_item3 }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-case">
+            <div class="img">
+                {{ with .Page.Params.second_case_img }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            <div class="info">
+                <h3>{{ with .Page.Params.second_case_name }}{{ . }}{{ end }}</h3>
+                <p> {{ with .Page.Params.second_case_description }}{{ . }}{{ end }}</p>
+                <p class="subtitle">{{ with .Page.Params.second_case_items_title }}{{ . }}{{ end }}</p>
+                <div class="items">
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.second_case_item }}{{ . }}{{ end }}</p>
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.second_case_item2 }}{{ . }}{{ end }}</p>
+                    <p><img src="/images/bullet.svg" alt="">{{ with .Page.Params.second_case_item3 }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
