@@ -1,0 +1,92 @@
+{{ with .Site.GetPage "privacypolicy" "first-privacy-tab" }}
+<div class="container-fluid tabs v-1150">
+    <div class="tabs-menu">
+        <style type="text/css">
+            .nav li.active:before{
+                background-image: url("../images/rt.png");
+            }
+            .nav li.active:after{
+                background-image: url("../images/rb.png");
+            }
+        </style>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#first">{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#second">{{ with .Site.GetPage "privacypolicy" "second-privacy-tab" }}{{ .Title }}{{ end }} </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#third">{{ with .Site.GetPage "privacypolicy" "third-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#fourth">{{ with .Site.GetPage "privacypolicy" "fourth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#fourth">{{ with .Site.GetPage "privacypolicy" "fifth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#sixth">{{ with .Site.GetPage "privacypolicy" "sixth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#seventh">{{ with .Site.GetPage "privacypolicy" "seventh-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#eighth">{{ with .Site.GetPage "privacypolicy" "eighth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#ninth">{{ with .Site.GetPage "privacypolicy" "ninth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#tenth">{{ with .Site.GetPage "privacypolicy" "tenth-privacy-tab" }}{{ .Title }}{{ end }}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="first">
+            <h2 class="h4">
+                {{ with .Site.GetPage "privacypolicy" "first-privacy-tab" }}{{ .Title }}{{ end }}
+            </h2>
+            {{ with .Site.GetPage "privacypolicy" "first-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane " id="second">
+            <h2 class="h4">
+                {{ with .Site.GetPage "privacypolicy" "second-privacy-tab" }}{{ .Title }}{{ end }}
+            </h2>
+            {{ with .Site.GetPage "privacypolicy" "second-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="third">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "third-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "third-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="fourth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "fourth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "fourth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="fifth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "fifth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "fifth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="sixth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "sixth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "sixth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="seventh">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "seventh-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "seventh-privacy-tab.md" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="eighth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "eighth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "eighth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="ninth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "ninth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "ninth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+        <div class="tab-pane" id="tenth">
+            <h2 class="h4">{{ with .Site.GetPage "privacypolicy" "tenth-privacy-tab" }}{{ .Title }}{{ end }}</h2>
+            {{ with .Site.GetPage "privacypolicy" "tenth-privacy-tab" }}{{ .Content }}{{ end }}
+        </div>
+    </div>
+</div>
