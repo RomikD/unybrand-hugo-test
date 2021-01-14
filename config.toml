@@ -7,14 +7,7 @@ identifier = "#"
 name = "Team"
 url = "#"
 weight = 1
-name = "Live calls"
-url = "/live-calls/"
-weight = 2
-[[menu.main]]
-identifier = "#"
-name = "Press"
-url = "#"
-weight = 2
+
 [params]
 authorName = "webdevelop.pro"
 dateFormat = "Jan 2, 2006"
