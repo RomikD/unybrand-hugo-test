@@ -57,18 +57,6 @@ parent = "industries"
 url = "/consumerfinance/"
 weight = 3
 [[menu.main]]
-identifier = "insurance"
-name = "Insurance"
-parent = "industries"
-url = "/insurance"
-weight = 7
-[[menu.main]]
-hasChildren = true
-identifier = "Press"
-name = "Press"
-url = "#"
-weight = 10
-[[menu.main]]
 hasChildren = false
 name = "FAQ"
 url = "#"
