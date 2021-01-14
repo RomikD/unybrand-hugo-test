@@ -85,32 +85,33 @@
     </div>
 </section>
 {{ end }}
-<section id="know-each">
-    <div class="know-each-top">
-        <p>
-            Let’s get to know each other
-        </p>
-        <p>
-            Looking to sell your Amazon FBA or DTC business? Reach out to us and we’ll take it from there, with our expert team guiding you through every step of our process.
-        </p>
-    </div>
-    <div class="know-each-bot">
-        <div>
+{{ with .Site.GetPage "main" "know-each" }}
+    <section id="know-each">
+        <div class="know-each-top">
             <p>
-                Header
+                {{ .Title }}  Let’s get to know each other
             </p>
             <p>
-                Facebook Facebook
-                Facebook Facebook
-                Facebook Facebook
-                Facebook<br>
-                Facebook
+                {{ with .Page.Params.description }}{{ . }}{{ end }}  Looking to sell your Amazon FBA or DTC business? Reach out to us and we’ll take it from there, with our expert team guiding you through every step of our process.
             </p>
         </div>
-        <div class="know-each-bot-img">
-            <img src="../images/business.png" alt="business">
+        <div class="know-each-bot">
+            <div>
+                <p>
+                    Header
+                </p>
+                <p>
+                    Facebook Facebook
+                    Facebook Facebook
+                    Facebook Facebook
+                    Facebook<br>
+                    Facebook
+                </p>
+            </div>
+            <div class="know-each-bot-img">
+                <img src="../images/business.png" alt="business">
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+{{ end }}
 
