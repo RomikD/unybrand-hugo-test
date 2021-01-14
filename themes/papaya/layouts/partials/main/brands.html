@@ -3,21 +3,22 @@
 <section id="sec-screen">
     <div class="screen-text">
         <p>
+            {{ .Title }}
+        </p>
+        <p>
             {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
         <p>
-            We understand the power of <br> multi-platform e-commerce, and how to navigate the disruptive growth of online marketplaces as well as digital DTC.
-        </p>
-        <p>
-            Our sweet spot? Satisfying consumers’ exploding demand for microbrands—globally.
+            {{ with .Page.Params.second_description }}{{ . }}{{ end }}
         </p>
     </div>
     <div class="screen-img">
         {{ with .Page.Params.first_img }}
-        <img src="{{ . }}" alt="">
+        <img src="{{ . }}" alt="huzeyfe-turan">
         {{ end }}
-        <img src="" alt="huzeyfe-turan">
-        <img src="../images/bird.png" alt="bird">
+        {{ with .Page.Params.second_img }}
+        <img src="{{ . }}" alt="bird">
+        {{ end }}
     </div>
 </section>
 <section id="how-work">
