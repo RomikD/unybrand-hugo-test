@@ -3,7 +3,6 @@ languageCode = "en-us"
 theme = "papaya"
 title = "Customer Lab"
 [[menu.main]]
-hasChildren = true
 identifier = "#"
 name = "Team"
 url = "#"
@@ -13,17 +12,6 @@ identifier = "#"
 name = "Press"
 url = "#"
 weight = 2
-[[menu.main]]
-name = "Brands"
-parent = "partner"
-url = "/brands/"
-weight = 8
-[[menu.main]]
-identifier = "local"
-name = "Local services"
-parent = "industries"
-url = "/local/"
-weight = 15
 [params]
 authorName = "webdevelop.pro"
 dateFormat = "Jan 2, 2006"
