@@ -9,16 +9,9 @@ name = "Team"
 url = "#"
 weight = 1
 [[menu.main]]
-identifier = "live-leads"
-name = "Live leads"
-parent = "service"
-url = "/live-leads/"
-weight = 5
-[[menu.main]]
-identifier = "live-calls"
-name = "Live calls"
-parent = "service"
-url = "/live-calls/"
+identifier = "#"
+name = "Press"
+url = "#"
 weight = 2
 [[menu.main]]
 identifier = "managedservices"
