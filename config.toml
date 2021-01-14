@@ -26,36 +26,14 @@ name = "Live leads"
 parent = "service"
 url = "/live-leads/"
 weight = 5
-[[menu.main]]
-identifier = "live-calls"
-name = "Live calls"
-parent = "service"
-url = "/live-calls/"
-weight = 2
-[[menu.main]]
-identifier = "managedservices"
-name = "Managed services"
-parent = "service"
-url = "/managedservices/"
-weight = 9
-[[menu.main]]
-identifier = "saas"
-name = "Saas"
-parent = "service"
-url = "/saas/"
-weight = 12
+
+
 [[menu.main]]
 hasChildren = true
 identifier = "Team"
 name = "Team"
 url = "#"
 weight = 6
-[[menu.main]]
-identifier = "consumerfinance"
-name = "Consumer finance"
-parent = "industries"
-url = "/consumerfinance/"
-weight = 3
 [[menu.main]]
 hasChildren = false
 name = "FAQ"
