@@ -1,8 +1,9 @@
 {{ with .Site.GetPage "main" "brands" }}
+
 <section id="sec-screen">
     <div class="screen-text">
         <p>
-            We buy your business, and you become a member of the leading next-generation e-commerce platform
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
         <p>
             We understand the power of <br> multi-platform e-commerce, and how to navigate the disruptive growth of online marketplaces as well as digital DTC.
@@ -12,7 +13,10 @@
         </p>
     </div>
     <div class="screen-img">
-        <img src="../images/huzeyfe-turan.png" alt="huzeyfe-turan">
+        {{ with .Page.Params.first_img }}
+        <img src="{{ . }}" alt="">
+        {{ end }}
+        <img src="" alt="huzeyfe-turan">
         <img src="../images/bird.png" alt="bird">
     </div>
 </section>
