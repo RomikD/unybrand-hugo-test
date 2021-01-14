@@ -1,0 +1,100 @@
+<section id="liveLeads" style="background: #fff url(../images/bgil.png); background-size: 100%;">
+    {{ with .Site.GetPage "live-leads" "live-leads-items" }}
+
+    <section id="live-leads_top" class="v-1110">
+        <h1 class="title-page">{{ with .Page.Params.title_page }}{{ . }}{{ end }}</h1>
+
+        <div class="img-block">
+            <img src="/images/live-leads-new.svg" alt="">
+        </div>
+        <div class="text-block">
+            <h1>{{ with .Page.Params.title_top }}{{ . }}{{ end }}</h1>
+            <p>{{ with .Page.Params.content_top }}{{ . }}{{ end }}</p>
+            <p>{{ with .Page.Params.content_top2 }}{{ . }}{{ end }}</p>
+            <div>
+                <a class="violet-button" data-toggle="modal" data-target="#get-started" >Get Started</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="get-started" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <section id="pop-up">
+                    <div class="image">
+                        <img src="/images/pop-up.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="phone">
+                            <div class="button">
+                                <div class="button-img">
+                                    <img src="/images/contact-phone.svg" alt="">
+                                </div>
+                            </div>
+                            <h2>Let's talk</h2>
+                            <p class="subtitle"></p>
+                        </div>
+                        <div class="get-started">
+                            <h2>Get started</h2>
+                            <div class="form">
+                                <form>
+                                    <div id="information">
+                                        <div class="one-input name">
+                                            <label>
+                                                <p class="title">First name</p>
+                                                <p><span class="wpcf7-form-control-wrap text"><input type="text" name="text" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" ></span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <div class="one-input email">
+                                            <label>
+                                                <p class="title">Email</p>
+                                                <p><span class="wpcf7-form-control-wrap email-820"><input type="email" name="email-820" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div id="submit">
+                                        <input type="submit" value="Connect me" class="s-v-button wpcf7-form-control wpcf7-submit">
+                                        <a class="sign" href="">Sign in</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="live-leads-items">
+        <h1 class="title-page">{{ with .Page.Params.title_below_illustration }}{{ . }}{{ end }}</h1>
+        <h2>{{ .Title }}</h2>
+        <div class="l-l-items">
+            <div class="one-l-l">
+                {{ with .Page.Params.live_item1_img }}
+                <img src="{{ . }}">
+                {{ end }}
+                <p>{{ with .Page.Params.live_item1_title }}{{ . }} {{ end }}</p>
+            </div>
+            <div class="one-l-l">
+                {{ with .Page.Params.live_item2_img }}
+                <img src="{{ . }}">
+                {{ end }}
+                <p>{{ with .Page.Params.live_item2_title }}{{ . }} {{ end }}</p>
+            </div>
+            <div class="one-l-l">
+                {{ with .Page.Params.live_item3_img }}
+                <img src="{{ . }}">
+                {{ end }}
+                <p>{{ with .Page.Params.live_item3_title }}{{ . }} {{ end }}</p>
+            </div>
+        </div>
+    </section>
+</section>
+{{ end }}

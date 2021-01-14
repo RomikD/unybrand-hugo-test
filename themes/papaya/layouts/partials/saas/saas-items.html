@@ -1,0 +1,87 @@
+{{ with .Site.GetPage "saas" "saas-items" }}
+<section id="saas-items">
+    <h2>{{ .Title }}</h2>
+    <div class="saas-items-b">
+        <div class="s-one-item">
+            <div class="image">
+                {{ with .Page.Params.icon1 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon1title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                {{ with .Page.Params.icon2 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon2title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon3 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon3title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon4 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon4title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon5 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon5title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon6 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon6title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon7 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon7title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="s-one-item">
+            <div class="image">
+                 {{ with .Page.Params.icon8 }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            {{ with .Page.Params.icon8title }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,30 @@
+<header class="{{ if eq  .URL  "/" }}home-page{{ else }}not-home-page{{ end }}">
+  <div class="v-1110">
+    <div class="logo"><a href="/">CustomerLab</a></div>
+    <nav class="menu">
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ if .HasChildren }}
+          <ul class="sub-menu">
+            {{ range .Children }}
+            <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    <div class="button"><a href="">Sign in</a></div><div class="toggle"><div class="menu-icon-wrapper icon-hamburger"><div class="menu-icon"></div></div></div></div>
+</div>
+
+</header>
+<div class="spiner">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>

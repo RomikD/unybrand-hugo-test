@@ -1,0 +1,54 @@
+{{ with .Site.GetPage "live-calls" "live-calls_top" }}
+<section id="live-calls_top" style="background-image: url(../images/h1-bg.png);">
+    <div class="v-1110">
+        <h1 class="title-page">{{ with .Page.Params.title_page }}{{ . }}{{ end }}</h1>
+        <div class="first">
+            <div class="img-block">
+                {{ with .Page.Params.live_calls_top }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+            <div class="text-block">
+                <h2>{{ .Title }}</h2>
+                {{ .Content }}
+                <div>
+                    <a class="violet-button" data-toggle="modal" data-target="#get-started" >Get Started</a>
+                </div>
+            </div>
+        </div>
+        {{ partial "pop-up/get-started.html" . }}
+        <div class="second">
+            <div class="text-block">
+                {{ with .Page.Params.second_block_title }}
+                <h2>
+                    {{ . }}
+                </h2>
+                {{ end }}
+                <div class="one-i f">
+                    <div class="icon">
+                        <img src="/images/icon1 live.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p> {{ with .Page.Params.second_left_block_title }}{{ . }} {{ end }}</p>
+                        <p class="sub">{{ with .Page.Params.second_left_block_description }}{{ . }} {{ end }}   </p>
+                    </div>
+                </div>
+                <div class="one-i">
+                    <div class="icon">
+                        <img src="/images/icon2 live.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p> {{ with .Page.Params.second_left_block2_title }}{{ . }} {{ end }}</p>
+                        <p class="sub">{{ with .Page.Params.second_left_block2_description }}{{ . }} {{ end }}   </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-block">
+                {{ with .Page.Params.second_left_block_img }}
+                <img src="{{ . }}">
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

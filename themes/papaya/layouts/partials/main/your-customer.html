@@ -1,0 +1,153 @@
+{{ with .Site.GetPage "main" "your-customer" }}<section id="your-customer">
+    <div class="image">
+        {{ with .Page.Params.top_img }}
+            <img src="{{ . }}" alt="">
+        {{ end }}
+    </div>
+    <div class="info">
+        <div class="v-1110">
+            <div class="title">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="text">
+                <p>{{ .Content }}</p>
+            </div>
+            <div class="buttons">
+                <a class="s-v-button active" data-toggle="modal" data-target="#get-started" >Get Started</a>
+                <a class="s-v-button" data-toggle="modal" data-target="#book-demo" >Book A Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+<!-- Modal -->
+<div class="modal fade" id="get-started" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <section id="pop-up">
+                <div class="image">
+                    <img src="/images/pop-up.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="phone">
+                        <div class="button">
+                            <div class="button-img">
+                                <img src="/images/contact-phone.svg" alt="">
+                            </div>
+                        </div>
+                        <h2>Let's talk</h2>
+                        <p class="subtitle"></p>
+                    </div>
+                    <div class="get-started">
+                        <h2>Get started</h2>
+                        <div class="form">
+                            <form>
+                                <div id="information">
+                                    <div class="one-input name">
+                                        <label>
+                                            <p class="title">First name</p>
+                                            <p><span class="wpcf7-form-control-wrap text"><input type="text" name="text" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="one-input email">
+                                        <label>
+                                            <p class="title">Email</p>
+                                            <p><span class="wpcf7-form-control-wrap email-820"><input type="email" name="email-820" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="submit">
+                                    <input type="submit" value="Connect me" class="s-v-button wpcf7-form-control wpcf7-submit">
+                                    <a class="sign" href="">Sign in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="book-demo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <section id="pop-up" class="try">
+                <div class="image">
+                    <img src="/images/pop-up-try.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="phone">
+                        <div class="button">
+                            <div class="button-img">
+                                <img src="/images/icon_try.svg" alt="">
+                            </div>
+                        </div>
+                        <h2>Let’s Go</h2>
+                        <p class="subtitle"></p>
+                    </div>
+                    <div class="get-started">
+                        <h2>Book a Demo</h2>
+                        <div class="form">
+                            <form>
+                                <div id="information">
+                                    <div class="one-input name">
+                                        <label>
+                                            <p class="title">First name</p>
+                                            <p><span class="wpcf7-form-control-wrap text"><input type="text" name="text" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="one-input email">
+                                        <label>
+                                            <p class="title">Email</p>
+                                            <p><span class="wpcf7-form-control-wrap email-820"><input type="email" name="email-820" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="goal">
+                                    <p class="title">What is your goal?</p>
+                                    <div class="goals">
+                                        <div class="one-g">
+                                            <img src="/images/items-icon.svg" alt="">
+                                            <p>Leads</p>
+                                        </div>
+                                        <div class="one-g">
+                                            <img src="/images/items-icon.svg" alt="">
+                                            <p>Call Leads</p>
+                                        </div>
+                                        <div class="one-g">
+                                            <img src="/images/items-icon.svg" alt="">
+                                            <p>Partnership</p>
+                                        </div>
+                                        <div class="one-g">
+                                            <img src="/images/items-icon.svg" alt="">
+                                            <p>Traffic partner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="submit">
+                                    <input type="submit" value="Connect me" class="s-v-button wpcf7-form-control wpcf7-submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

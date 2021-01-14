@@ -1,0 +1,103 @@
+{{ with .Site.GetPage "main" "how-we-do" }}
+<section id="how-we-do">
+    <h2>{{ with .Page.Params.first_title }}{{ . }}{{ end }}</h2>
+    <h4>{{ .Title }}</h4>
+    <div class="how-we-do-icons-block">
+
+        <div class="one-icon-block">
+            <a href="/live-calls/">
+                <div class="icon">
+                        {{ with .Page.Params.icon_img }}
+                        <img src="{{ . }}" alt="">
+                        {{ end }}
+
+
+                </div>
+                <div class="content">
+                    <h3>{{ with .Page.Params.icon_tile }}{{ . }}{{ end }} </h3>
+                    <div class="description">
+                        <p>{{ with .Page.Params.icon_description }}{{ . }}{{ end }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="one-icon-block">
+            <a href="/live-calls/">
+            <div class="icon">
+                {{ with .Page.Params.icon2_img }}
+                <img src="{{ . }}" alt="">
+                {{ end }}
+            </div>
+            <div class="content">
+                <h3>{{ with .Page.Params.icon2_tile }}{{ . }}{{ end }} </h3>
+                <div class="description">
+                    <p>{{ with .Page.Params.icon2_description }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="one-icon-block">
+            <a href="/live-leads/">
+                <div class="icon">
+
+                        {{ with .Page.Params.icon3_img }}
+                        <img src="{{ . }}" alt="">
+                        {{ end }}
+
+                </div>
+                <div class="content">
+                    <h3>{{ with .Page.Params.icon3_tile }}{{ . }}{{ end }} </h3>
+                    <div class="description">
+                        <p>{{ with .Page.Params.icon3_description }}{{ . }}{{ end }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="one-icon-block">
+            <a href="/saas/">
+            <div class="icon">
+                {{ with .Page.Params.icon4_img }}
+                <img src="{{ . }}" alt="">
+                {{ end }}
+            </div>
+            <div class="content">
+                <h3>{{ with .Page.Params.icon4_tile }}{{ . }}{{ end }} </h3>
+                <div class="description">
+                    <p>{{ with .Page.Params.icon4_description }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="one-icon-block">
+            <a href="/managedservices/">
+            <div class="icon">
+                {{ with .Page.Params.icon5_img }}
+                <img src="{{ . }}" alt="">
+                {{ end }}
+            </div>
+            <div class="content">
+                <h3>{{ with .Page.Params.icon5_tile }}{{ . }}{{ end }} </h3>
+                <div class="description">
+                    <p>{{ with .Page.Params.icon5_description }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="one-icon-block">
+            <a href="/your-industry/">
+            <div class="icon">
+                {{ with .Page.Params.icon6_img }}
+                <img src="{{ . }}" alt="">
+                {{ end }}
+            </div>
+            <div class="content">
+                <h3>{{ with .Page.Params.icon6_tile }}{{ . }}{{ end }} </h3>
+                <div class="description">
+                    <p>{{ with .Page.Params.icon6_description }}{{ . }}{{ end }}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}

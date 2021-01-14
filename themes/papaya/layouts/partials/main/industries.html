@@ -1,0 +1,42 @@
+{{ with .Site.GetPage "main" "industries" }}
+<section id="industries" class="v-1110">
+    <div class="industries-text">
+        <div class="title">
+            <h2>{{ .Title }}</h2>
+        </div>
+        <div class="info">
+            <p>{{ .Content }}</p>
+        </div>
+    </div>
+    <div class="industries-items">
+        <div class="one-item">
+            <a href="{{ with .Page.Params.one_item_link }}{{ . }}{{ end }}">
+            {{ with .Page.Params.one_item_img }}
+                <img src="{{ . }}" alt="">
+            {{ end }}
+            <h4>{{ with .Page.Params.one_item_title }}{{ . }}{{ end }}</h4></a>
+        </div>
+        <div class="one-item">
+            <a href="{{ with .Page.Params.one_item2_link }}{{ . }}{{ end }}">
+            {{ with .Page.Params.one_item2_img }}
+                <img src="{{ . }}" alt="">
+            {{ end }}
+            <h4>{{ with .Page.Params.one_item2_title }}{{ . }}{{ end }}</h4></a>
+        </div>
+        <div class="one-item">
+            <a href="{{ with .Page.Params.one_item3_link }}{{ . }}{{ end }}">
+            {{ with .Page.Params.one_item3_img }}
+                <img src="{{ . }}" alt="">
+            {{ end }}
+            <h4>{{ with .Page.Params.one_item3_title }}{{ . }}{{ end }}</h4></a>
+        </div>
+        <div class="one-item">
+            <a href="{{ with .Page.Params.one_item4_link }}{{ . }}{{ end }}">
+            {{ with .Page.Params.one_item4_img }}
+                <img src="{{ . }}" alt="">
+            {{ end }}
+            <h4>{{ with .Page.Params.one_item4_title }}{{ . }}{{ end }}</h4></a>
+        </div>
+    </div>
+</section>
+{{ end }}
