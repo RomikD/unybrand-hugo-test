@@ -14,53 +14,6 @@ name = "Press"
 url = "#"
 weight = 2
 [[menu.main]]
-identifier = "managedservices"
-name = "Managed services"
-parent = "service"
-url = "/managedservices/"
-weight = 9
-[[menu.main]]
-identifier = "saas"
-name = "Saas"
-parent = "service"
-url = "/saas/"
-weight = 12
-[[menu.main]]
-hasChildren = true
-identifier = "industries"
-name = "Industries"
-url = "#"
-weight = 6
-[[menu.main]]
-identifier = "consumerfinance"
-name = "Consumer finance"
-parent = "industries"
-url = "/consumerfinance/"
-weight = 3
-[[menu.main]]
-identifier = "insurance"
-name = "Insurance"
-parent = "industries"
-url = "/insurance"
-weight = 7
-[[menu.main]]
-hasChildren = true
-identifier = "partner"
-name = "Partners"
-url = "#"
-weight = 10
-[[menu.main]]
-hasChildren = false
-name = "Contact us"
-url = "/contact-us/"
-weight = 13
-[[menu.main]]
-identifier = "Publishers"
-name = "Publishers"
-parent = "partner"
-url = "/publisher/"
-weight = 4
-[[menu.main]]
 name = "Brands"
 parent = "partner"
 url = "/brands/"
