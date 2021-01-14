@@ -7,7 +7,6 @@ identifier = "#"
 name = "Team"
 url = "#"
 weight = 1
-identifier = "live-calls"
 name = "Live calls"
 url = "/live-calls/"
 weight = 2
