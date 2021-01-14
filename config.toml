@@ -90,8 +90,4 @@ name = "Local services"
 parent = "industries"
 url = "/local/"
 weight = 15
-[params]
-authorName = "dudnyk.rb@gmail.com"
-dateFormat = "Jan 2, 2006"
-googleAdSense = "ca-pub-0000000000000000"
-googleAnalytics = "UA-000000000-1"
+
