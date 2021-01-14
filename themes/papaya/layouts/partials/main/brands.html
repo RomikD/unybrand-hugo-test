@@ -28,23 +28,23 @@
             <p>01</p>
             <div class="line"></div>
         </div>
-        <p>{{ .Title }} How we work</p>
+        <p>{{ .Title }}</p>
     </div>
     <div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ with .Page.Params.second_description }}{{ . }}{{ end }}
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
         </p>
     </div>
 </section>
