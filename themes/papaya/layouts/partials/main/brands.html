@@ -52,35 +52,22 @@
 {{ with .Site.GetPage "main" "brands" }}
     <section id="brands">
     <div class="brands-top">
-        <p>{{ .Title }} Title</p>
+        <p>{{ .Title }}</p>
         <p>
-            {{ with .Page.Params.top_right_description }}{{ . }}{{ end }}top_right_description
-
+            {{ with .Page.Params.top_right_description }}{{ . }}{{ end }}
         </p>
     </div>
     <div class="brands-bot">
         <div>
-            <p>Header</p>
+            <p>{{ with .Page.Params.brands_block1_title }}{{ . }}{{ end }}</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {{ with .Page.Params.brands_block1_description }}{{ . }}{{ end }}
             </p>
         </div>
         <div>
-            <p>Header</p>
+            <p>{{ with .Page.Params.brands_block2_title }}{{ . }}{{ end }}</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div>
-            <p>Header</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div>
-            <p>Header</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {{ with .Page.Params.brands_bloc2_description }}{{ . }}{{ end }}
             </p>
         </div>
     </div>
