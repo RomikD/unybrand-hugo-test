@@ -1,11 +1,17 @@
 baseURL = "/"
 languageCode = "en-us"
 theme = "papaya"
-title = "Customer Lab"
+title = "unybrand"
 [menu]
-main = []
+main = [
+[[menu.main]]
+identifier = "insurance"
+name = "Insurance"
+parent = "industries"
+url = "/insurance"
+weight = 7]
 [params]
-authorName = "webdevelop.pro"
+authorName = "dudnyk.rb@gmail.com"
 dateFormat = "Jan 2, 2006"
 googleAdSense = "ca-pub-0000000000000000"
 googleAnalytics = "UA-000000000-1"
