@@ -2,44 +2,35 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "papaya"
 title = "Customer Lab"
-[[menu.main]]
-identifier = "your_industry"
-name = "Your Industry"
-parent = "industries"
-url = "/your-industry"
-weight = 14
-[[menu.main]]
-identifier = "platforms"
-name = "Platforms"
-parent = "partner"
-url = "/platforms/"
-weight = 11
+
 [[menu.main]]
 hasChildren = true
 identifier = "About us"
 name = "About us"
 url = "#"
 weight = 1
-[[menu.main]]
-identifier = "live-leads"
-name = "Live leads"
-parent = "service"
-url = "/live-leads/"
-weight = 5
-
 
 [[menu.main]]
 hasChildren = true
 identifier = "Team"
 name = "Team"
 url = "#"
-weight = 6
+weight = 2
+[[menu.main]]
+hasChildren = false
+name = "Press"
+url = "#"
+weight = 3
 [[menu.main]]
 hasChildren = false
 name = "FAQ"
 url = "#"
-weight = 13
-
+weight = 4
+[[menu.main]]
+hasChildren = false
+name = "Contacts"
+url = "#"
+weight = 5
 [[menu.main]]
 identifier = "local"
 name = "Local services"
