@@ -1,0 +1,49 @@
+{{ with .Site.GetPage "local" "local-info" }}
+<section id="industries_info"  style="background-image: url(../images/bbr.png);">
+    <div class="v-1110">
+        <div class="industries_info_text">
+            <h1>{{ .Title}} </h1>
+            <div class="icons-info">
+                <div class="one-icon-info">
+                    <div class="icon">
+                        {{ with .Page.Params.icon }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <p>{{ with .Page.Params.titleinfo1 }}{{ . }} {{ end }}</p>
+                </div>
+                <div class="one-icon-info">
+                    <div class="icon">
+                        {{ with .Page.Params.icon2 }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <p>{{ with .Page.Params.title2 }}{{ . }} {{ end }}</p>
+                </div>
+                <div class="one-icon-info">
+                    <div class="icon">
+                        {{ with .Page.Params.icon3 }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <p>{{ with .Page.Params.title3 }}{{ . }} {{ end }}</p>
+                </div>
+                <div class="one-icon-info">
+                    <div class="icon">
+                        {{ with .Page.Params.icon4 }}
+                        <img src="{{ . }}">
+                        {{ end }}
+                    </div>
+                    <p>{{ with .Page.Params.title4 }}{{ . }} {{ end }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            {{ with .Page.Params.img }}
+            <img src="{{ . }}">
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "live-leads" "liveleads-redy" }}
+<section id="ready_to_scale_l" style="background-image: url(../images/maskkkk2.png);">
+
+    <h2>{{ .Title }}</h2>
+    <div>
+        <a class="r-b" data-toggle="modal" data-target="#get-started">Get Started</a>
+    </div>
+</section>{{ end }}
+{{ partial "pop-up/get-started.html" . }}
