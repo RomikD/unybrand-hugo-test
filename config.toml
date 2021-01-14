@@ -11,7 +11,7 @@ parent = "industries"
 url = "/insurance"
 weight = 7]
 [params]
-authorName = "dudnyk.rb@gmail.com"
+authorName = "dudnyk.rb"
 dateFormat = "Jan 2, 2006"
 googleAdSense = "ca-pub-0000000000000000"
 googleAnalytics = "UA-000000000-1"
