@@ -46,8 +46,8 @@ url = "/saas/"
 weight = 12
 [[menu.main]]
 hasChildren = true
-identifier = "industries"
-name = "Industries"
+identifier = "Team"
+name = "Team"
 url = "#"
 weight = 6
 [[menu.main]]
@@ -64,8 +64,8 @@ url = "/insurance"
 weight = 7
 [[menu.main]]
 hasChildren = true
-identifier = "partner"
-name = "Partners"
+identifier = "Press"
+name = "Press"
 url = "#"
 weight = 10
 [[menu.main]]
