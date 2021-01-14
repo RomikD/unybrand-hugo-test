@@ -95,15 +95,4 @@ authorName = "webdevelop.pro"
 dateFormat = "Jan 2, 2006"
 googleAdSense = "ca-pub-0000000000000000"
 googleAnalytics = "UA-000000000-1"
-[[params.social.facebook]]
-name = "facebook"
-url = "https://facebook.com/"
-weight = 30
-[[params.social.instagram]]
-name = "instagram"
-url = "https://instagram.com/"
-weight = 30
-[[params.social.linkedin]]
-name = "linkedin"
-url = "https://linkedin.com/"
-weight = 30
+
