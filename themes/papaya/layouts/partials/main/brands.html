@@ -108,8 +108,10 @@
                     Facebook
                 </p>
             </div>
-            <div class="know-each-bot-img">
-                <img src="../images/business.png" alt="business">
+            <div class="know-each-bot-img">img
+                {{ with .Page.Params.img }}
+                <img src="{{ . }}" alt="business">
+                {{ end }}
             </div>
         </div>
     </section>
