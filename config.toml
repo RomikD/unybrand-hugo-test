@@ -70,20 +70,10 @@ url = "#"
 weight = 10
 [[menu.main]]
 hasChildren = false
-name = "Contact us"
-url = "/contact-us/"
+name = "FAQ"
+url = "#"
 weight = 13
-[[menu.main]]
-identifier = "Publishers"
-name = "Publishers"
-parent = "partner"
-url = "/publisher/"
-weight = 4
-[[menu.main]]
-name = "Brands"
-parent = "partner"
-url = "/brands/"
-weight = 8
+
 [[menu.main]]
 identifier = "local"
 name = "Local services"
