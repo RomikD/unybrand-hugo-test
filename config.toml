@@ -31,12 +31,7 @@ hasChildren = false
 name = "Contacts"
 url = "#"
 weight = 5
-[[menu.main]]
-identifier = "local"
-name = "Local services"
-parent = "industries"
-url = "/local/"
-weight = 15
+
 [params]
 authorName = "webdevelop.pro"
 dateFormat = "Jan 2, 2006"
