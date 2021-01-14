@@ -49,13 +49,13 @@
     </div>
 </section>
 {{ end }}
-<section id="brands">
+{{ with .Site.GetPage "main" "brands" }}
+    <section id="brands">
     <div class="brands-top">
+        <p>{{ .Title }} Title</p>
         <p>
-            Brands we are looking for
-        </p>
-        <p>
-            You want to sell your Amazon FBA business? We have more than 25 years
+            {{ with .Page.Params.top_right_description }}{{ . }}{{ end }}top_right_description
+
         </p>
     </div>
     <div class="brands-bot">
@@ -85,6 +85,7 @@
         </div>
     </div>
 </section>
+{{ end }}
 <section id="know-each">
     <div class="know-each-top">
         <p>
